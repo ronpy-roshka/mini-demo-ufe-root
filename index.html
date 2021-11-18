@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba de uFE</title>
+
+
+    <script src="./web-components/vue-section-one.min.js"></script>
+    <script src="./web-components/vue-section-user.min.js"></script>
+    <script src="./web-components/v-router.min.js"></script>
+    <script src="./web-components/v-simple.umd.min.js"></script>
+
+    <link rel="stylesheet" href="./web-components/v-simple.css">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <script>
+        let _ROOT_RANDOM_VALUE = 0;
+
+        function ImprimirRandom(valor) {
+            console.log(valor);
+            // saludar("ronpy");
+        }
+    </script>
+
+    <div class="container-fluid">
+
+        <div class="row my-2 ">
+            <div class="col">
+                <div class="alert alert-primary mb-0" role="alert" style="text-align: center;">
+                    uFE ROOT - Carga de imagen random
+                </div>
+            </div>
+        </div>
+
+        <div class="row my-1">
+            <div class="col">
+                <div class="text-center">
+                    <img src="https://random.imagecdn.app/2000/200" class="rounded img-fluid img-thumbnail"
+                        alt="ramdom image">
+                </div>
+            </div>
+        </div>
+
+        <div class="row my-2">
+            <div class="col col-md-12 col-lg-4 col-xl-3">
+                <vue-section-one></vue-section-one>
+            </div>
+            <div class="col col-md-12 col-lg-8 col-xl-9 my-xs-3 my-sm-3 my-md-3 my-lg-0">
+                <vue-section-user></vue-section-user>
+            </div>
+            <div class="col-12">
+                <custom-list></custom-list>
+                <script src="./web-components/custom-list/runtime.js" defer></script>
+                <script src="./web-components/custom-list/polyfills.js" defer></script>
+                <script src="./web-components/custom-list/main.js" defer></script>
+            </div>
+        </div>
+
+        <div class="row my-2">
+            <div class="col-12">
+                <v-simple></v-simple>
+            </div>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
